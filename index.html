@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Birthday Website</title>
+  <link rel="stylesheet" href="styles-edited.css">
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="war-background" aria-hidden="true">
+      <div class="spitfire spitfire-one">✈</div>
+      <div class="spitfire spitfire-two">✈</div>
+      <div class="soldier soldier-left">♟</div>
+      <div class="soldier soldier-right">♟</div>
+    </div>
+    <div class="tiny top-left" data-content="hero.date"></div>
+    <div class="tiny top-right" data-content="hero.zone"></div>
+    <div class="background-phrases" aria-hidden="true">
+      <span class="phrase phrase-generations">GenerationS</span>
+      <span class="phrase phrase-strong">StronG Church</span>
+      <span class="phrase phrase-others">Others</span>
+      <span class="phrase phrase-home">Home</span>
+      <span class="phrase phrase-different">From you and your generation onwards, it will be different.</span>
+    </div>
+    <h1 data-content="hero.title"></h1>
+    <h2 data-content="hero.name"></h2>
+    <p class="script" data-content="hero.subtitle"></p>
+    <div class="envelope" id="envelope">
+      <div class="paper"><span data-content="hero.envelopeTo"></span><br><small>FROM<br><span data-content="hero.envelopeFrom"></span></small></div>
+      <div class="flap"></div><div class="seal" data-content="hero.seal"></div>
+    </div>
+    <button id="begin" data-content="hero.button"></button>
+    <div class="keep" data-content="hero.scrollHint"></div>
+  </section>
+
+
+  <section class="letters">
+    <h3 data-content="lettersSection.heading"></h3>
+    <p class="script red" data-content="lettersSection.subtitle"></p>
+    <div class="cards" id="letter-cards"></div>
+  </section>
+
+  <footer class="script red"><span data-content="footer.text"></span><br><small data-content="footer.year"></small></footer>
+</main>
+
+<div class="modal" id="letter-modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+  <article class="modal-paper">
+    <button class="modal-close" data-close-modal aria-label="Close">×</button>
+    <small id="modal-label"></small>
+    <h3 id="modal-name"></h3>
+    <p id="modal-body"></p>
+  </article>
+</div>
+
+<script src="site-content.js"></script>
+<script src="script-edited.js"></script>
+</body>
+</html>
